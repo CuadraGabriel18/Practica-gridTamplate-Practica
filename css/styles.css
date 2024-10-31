@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content-grid{
+    display: grid;
+    gap: .2em;
+    width: 600px;
+    margin: 0 auto;
+    height: 500px;
+    grid-template-areas: 
+        'Logo Logo Titulo Titulo'
+        'Menu Menu Menu   Menu'
+        'Slide Slide Carrucel Carrucel'
+        'inf inf inf inf'
+        'imagen imagen imagen imagen'
+        'video video video video'
+        'derechos derechos derechos derechos'
+        ;
+}
+.contenido:nth-child(1){
+    background: yellowgreen;
+    grid-area: Logo;
+}
+.contenido:nth-child(2){
+    background: rgb(255, 238, 0);
+    grid-area: Titulo;
+}
+.contenido:nth-child(3){
+    background: rgb(0, 255, 179);
+    grid-area: Menu;
+}
+.contenido:nth-child(4){
+    background: rgb(255, 0, 255);
+    grid-area: Slide;
+}
+.contenido:nth-child(5){
+    background: rgb(255, 136, 0);
+    grid-area: Carrucel;
+}
+.contenido:nth-child(6){
+    background: rgb(255, 0, 43);
+    grid-area: inf;
+}
+.contenido:nth-child(7){
+    background: rgb(0, 68, 255);
+    grid-area: imagen;
+}
+.contenido:nth-child(8){
+    background: rgb(91, 94, 102);
+    grid-area: video;
+}
+.contenido:nth-child(9){
+    background: rgb(96, 117, 0);
+    grid-area: derechos;
+}
+
+
+@media screen and (min-width:576px) {
+    .content-grid{
+        grid-template-areas: 
+        'Logo Logo Titulo Titulo'
+        'Menu Menu Menu   Menu'
+        'Slide Slide Carrucel Carrucel'
+        'inf inf inf inf'
+        'imagen imagen imagen imagen'
+        'video video video video'
+        'derechos derechos derechos derechos'
+        ;
+    }
+    .contenido:nth-child(1){
+        background: yellowgreen;
+        grid-area: Logo;
+    }
+    .contenido:nth-child(2){
+        background: rgb(255, 238, 0);
+        grid-area: Titulo;
+    }
+    .contenido:nth-child(3){
+        background: rgb(0, 255, 179);
+        grid-area: Menu;
+    }
+    .contenido:nth-child(4){
+        background: rgb(255, 0, 255);
+        grid-area: Slide;
+    }
+    .contenido:nth-child(5){
+        background: rgb(255, 136, 0);
+        grid-area: Carrucel;
+    }
+    .contenido:nth-child(6){
+        background: rgb(255, 0, 43);
+        grid-area: inf;
+    }
+    .contenido:nth-child(7){
+        background: rgb(0, 68, 255);
+        grid-area: imagen;
+    }
+    .contenido:nth-child(8){
+        background: rgb(91, 94, 102);
+        grid-area: video;
+    }
+    .contenido:nth-child(9){
+        background: rgb(96, 117, 0);
+        grid-area: derechos;
+    }
+}
+
+@media screen and (min-width:577px) {
+    .content-grid{
+        grid-template-areas: 
+        'Logo Titulo Titulo Titulo'
+        'Menu Menu Menu   Menu'
+        'Slide Slide Slide Slide'
+        'Carrucel Carrucel inf inf'
+        'Carrucel Carrucel inf inf'
+        'imagen imagen video video'
+        'imagen imagen video video'
+        'derechos derechos derechos derechos'
+        ;
+    }
+    .contenido:nth-child(1){
+        background: yellowgreen;
+        grid-area: Logo;
+    }
+    .contenido:nth-child(2){
+        background: rgb(255, 238, 0);
+        grid-area: Titulo;
+    }
+    .contenido:nth-child(3){
+        background: rgb(0, 255, 179);
+        grid-area: Menu;
+    }
+    .contenido:nth-child(4){
+        background: rgb(255, 0, 255);
+        grid-area: Slide;
+    }
+    .contenido:nth-child(5){
+        background: rgb(255, 136, 0);
+        grid-area: Carrucel;
+    }
+    .contenido:nth-child(6){
+        background: rgb(255, 0, 43);
+        grid-area: inf;
+    }
+    .contenido:nth-child(7){
+        background: rgb(0, 68, 255);
+        grid-area: imagen;
+    }
+    .contenido:nth-child(8){
+        background: rgb(91, 94, 102);
+        grid-area: video;
+    }
+    .contenido:nth-child(9){
+        background: rgb(96, 117, 0);
+        grid-area: derechos;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .content-grid{
+        grid-template-areas: 
+        'Logo Logo Titulo Titulo Titulo Titulo'
+        'Menu Menu Titulo Titulo Titulo Titulo'
+        'Slide Carrucel Carrucel Carrucel Carrucel Carrucel'
+        'Slide inf inf inf inf inf'
+        'Slide inf inf inf inf inf'
+        'Slide imagen imagen imagen imagen imagen'
+        'Slide imagen imagen imagen imagen imagen'
+        'Slide video video video video video'
+        'derechos derechos derechos derechos derechos derechos'
+        
+        ;
+    }
+    .contenido:nth-child(1){
+        background: yellowgreen;
+        grid-area: Logo;
+    }
+    .contenido:nth-child(2){
+        background: rgb(255, 238, 0);
+        grid-area: Titulo;
+    }
+    .contenido:nth-child(3){
+        background: rgb(0, 255, 179);
+        grid-area: Menu;
+    }
+    .contenido:nth-child(4){
+        background: rgb(255, 0, 255);
+        grid-area: Slide;
+    }
+    .contenido:nth-child(5){
+        background: rgb(255, 136, 0);
+        grid-area: Carrucel;
+    }
+    .contenido:nth-child(6){
+        background: rgb(255, 0, 43);
+        grid-area: inf;
+    }
+    .contenido:nth-child(7){
+        background: rgb(0, 68, 255);
+        grid-area: imagen;
+    }
+    .contenido:nth-child(8){
+        background: rgb(91, 94, 102);
+        grid-area: video;
+    }
+    .contenido:nth-child(9){
+        background: rgb(96, 117, 0);
+        grid-area: derechos;
+    }
+}
+
+
